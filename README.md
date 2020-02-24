@@ -8,27 +8,13 @@ Then, I implemented a **Multi-Layer Perceptron** with an API similar to popular 
 ## CNN.py
 A generic implementation of **CNN** which has similar usage and functionality to torch.nn.Conv1d.
 
-### Note:
-The parameters for my MLP implementaion are:
+## GRU.py
+A numpy implementation of **GRU** forward and backprop, similar to the Pytorch equivalent nn.GRUCell.
 
-• input_size: The size of each individual data example.
+## BeamSearch.py
+Implementation of **greedy search** and **beam search**
 
-• output_size: The number of outputs.
+Greedy search greedily picks the label with maximum probability at each time step to compose the output sequence. Beam search is a more effective decoding technique to to obtain a sub-optimal result out of sequential decisions, striking a balance between a greedy search and an exponential exhaustive search by keeping a beam of top-k scored sub-sequences at each time step.
 
-• hiddens: A list with the number of units in each hidden layer.
-
-• activations: A list of Activation objects for each layer.
-
-• weight_init_fn: A function applied to each weight matrix before training.
-
-• bias_init_fn: A function applied to each bias vector before training.
-
-• criterion: A Criterion object to compute the loss and its derivative.
-
-• lr: The learning rate.
-
-• momentum: Momentum scale.
-
-• num_bn_layers: Number of BatchNorm layers start from upstream.
-
-
+### NOTE:
+For both the functions, the *SymbolSets* is a list of symbols that can be predicted except for the blank symbol; *y_probs*, an array of shape (len(SymbolSets) + 1 , seq length, batch size ), is the probability distribution over all symbols including the blank symbol at each time step (note that probability of blank for all time steps is the first row of y probs ).
