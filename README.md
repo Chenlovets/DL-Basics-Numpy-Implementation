@@ -16,5 +16,5 @@ Implementation of **greedy search** and **beam search**
 
 Greedy search greedily picks the label with maximum probability at each time step to compose the output sequence. Beam search is a more effective decoding technique to to obtain a sub-optimal result out of sequential decisions, striking a balance between a greedy search and an exponential exhaustive search by keeping a beam of top-k scored sub-sequences at each time step.
 
-### NOTE:
+NOTE:
 For both the functions, the *SymbolSets* is a list of symbols that can be predicted except for the blank symbol; *y_probs*, an array of shape (len(SymbolSets) + 1 , seq length, batch size ), is the probability distribution over all symbols including the blank symbol at each time step (note that probability of blank for all time steps is the first row of y probs ).
