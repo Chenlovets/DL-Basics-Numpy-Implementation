@@ -1,9 +1,12 @@
 # Deep Learning Basics Numpy Implementation
 
-This repo includes my own implementations of some deep learning basics: **activation functions**, **SoftmaxCrossEntrop** loss function using LogSumExp trick, **Bath Normalization**, etc. These implementations used python Numpy library only and include both forward pass and backprop algorithm. 
+## MLP.py
+This file includes my own implementations of some deep learning basics: **activation functions**, **SoftmaxCrossEntrop** loss function using LogSumExp trick, **Bath Normalization**, etc. These implementations used python Numpy library only and include both forward pass and backprop algorithm. 
 
-Also, I implemented a **Multi-Layer Perceptron** with an API similar to popular Automatic Differentiation Libraries like PyTorch. This generic implementation supports an arbitrary number of layers, types of activations, network sizes, batch norm layer and momentum.
+Then, I implemented a **Multi-Layer Perceptron** with an API similar to popular Automatic Differentiation Libraries like PyTorch. This generic implementation supports an arbitrary number of layers, types of activations, network sizes, batch norm layer and momentum.
 
+## CNN.py
+A generic implementation of **CNN** which has similar usage and functionality to torch.nn.Conv1d.
 
 ### Note:
 The parameters for my MLP implementaion are:
