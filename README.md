@@ -9,7 +9,9 @@ Also, I implemented a **Multi-Layer Perceptron** with an API similar to popular 
 The parameters for my MLP implementaion are:
 
 • input size: The size of each individual data example.
+
 • output size: The number of outputs.
+
 • hiddens: A list with the number of units in each hidden layer.
 • activations: A list of Activation objects for each layer.
 • weight_init_fn: A function applied to each weight matrix before training.
